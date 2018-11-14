@@ -30,6 +30,53 @@ default.jfc  profile.jfc
 
 #### Enable JFR using JCMD
 
+```
+JFR.check
+JFR.configure
+JFR.dump
+JFR.start
+JFR.stop
+```
+
+```
+bash-4.2# jcmd 1 help JFR.configure
+1:
+JFR.configure
+Configure JFR
+
+Impact: Low
+
+Permission: java.lang.management.ManagementPermission(monitor)
+
+Syntax : JFR.configure [options]
+
+Options: (options must be specified using the <key> or <key>=<value> syntax)
+	repositorypath : [optional] Path to repository,.e.g \"My Repository\" (STRING, no default value)
+	dumppath : [optional] Path to dump,.e.g \"My Dump path\" (STRING, no default value)
+	stackdepth : [optional] Stack Depth (JLONG, 64)
+	globalbuffercount : [optional] Number of global buffers, (JLONG, 32)
+	globalbuffersize : [optional] Size of a global buffers, (JLONG, 524288)
+	thread_buffer_size : [optional] Size of a thread buffer (JLONG, 8192)
+	memorysize : [optional] Overall memory size,  (JLONG, 16777216)
+	maxchunksize : [optional] Size of an individual disk chunk (JLONG, 12582912)
+	samplethreads : [optional] Activate Thread sampling (BOOLEAN, true)
+	
+####################################
+
+bash-4.2# jcmd 1 JFR.configure
+1:
+Current configuration:
+
+Repository path: N/A
+Stack depth: 64
+Global buffer count: 20
+Global buffer size: 512.0 kB
+Thread buffer size: 8.0 kB
+Memory size: 10.0 MB
+Max chunk size: 12.0 MB
+Sample threads: true
+```
+
 - https://docs.oracle.com/javacomponents/jmc-5-5/jfr-command-reference/diagnostic-command-reference.htm#resourceid-15322-48C8362A
 
 ```
