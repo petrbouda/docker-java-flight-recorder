@@ -1,3 +1,3 @@
 module pbouda.docker.jfr {
-    requires helidon.webserver;
+    requires io.helidon.webserver;
 }

@@ -8,7 +8,7 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <properties>
-        <helidon.version>0.10.5-SNAPSHOT</helidon.version>
+        <helidon.version>0.10.5</helidon.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
