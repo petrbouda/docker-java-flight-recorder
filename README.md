@@ -17,14 +17,12 @@ docker run -it -p 8080:8080 docker-jfr
 
 ```
 root@b03df92bfa39:/docker-java-home/lib# jcmd 8 JFR.start delay=20s duration=60s name=Test filename=recording.jfr
-8:
-Could not parse setting default
 ```
 
-- at this time we need to use OpenJDK from Oracle - `openjdk:11-oracle`
+- Profiles:
 
 ```
-bash-4.2# ls /usr/java/openjdk-11/lib/jfr/
+bash-4.2# ls /docker-java-home/lib/jfr/
 default.jfc  profile.jfc
 ```
 

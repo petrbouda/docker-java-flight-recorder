@@ -1,4 +1,4 @@
-FROM openjdk:11-oracle
+FROM openjdk:11
 
 COPY maven/target/dependency /app/modules
 COPY maven/target/*.jar /app/modules
