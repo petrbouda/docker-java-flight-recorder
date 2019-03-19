@@ -4,12 +4,27 @@
 docker run -it -p 8080:8080 docker-jfr
 ```
 
-#### Links
+## Readings
 
-> https://medium.com/@chrishantha/using-java-flight-recorder-2367c01deacf
-- https://docs.oracle.com/javacomponents/jmc-5-4/jfr-runtime-guide/run.htm#JFRUH164
-- https://docs.oracle.com/javase/10/troubleshoot/troubleshoot-performance-issues-using-jfr.htm#JSTGD299
-- https://www.oracle.com/technetwork/java/javase/jmc6-release-notes-3689600.html
+[Running Java Flight Recorder](https://docs.oracle.com/javacomponents/jmc-5-4/jfr-runtime-guide/run.htm#JFRUH176)
+
+[Java Mission Control 6.0](http://www.oracle.com/technetwork/java/javase/jmc6-release-notes-3689600.html)
+
+[Java Flight Recorder Runtime Guide](https://docs.oracle.com/javacomponents/jmc-5-5/jfr-runtime-guide/toc.htm)
+
+[Java Mission Control User's Guide](https://docs.oracle.com/javacomponents/jmc-5-5/jmc-user-guide/toc.htm)
+
+[Java Mission Control 6.0 Release Notes](http://www.oracle.com/technetwork/java/javase/jmc6-release-notes-3689600.html)
+
+[Troubleshoot Performance Issues Using JFR](https://docs.oracle.com/javase/10/troubleshoot/troubleshoot-performance-issues-using-jfr.htm#JSTGD299)
+
+https://medium.com/@chrishantha/using-java-flight-recorder-2367c01deacf
+
+https://docs.oracle.com/javacomponents/jmc-5-4/jfr-runtime-guide/run.htm#JFRUH164
+
+https://docs.oracle.com/javase/10/troubleshoot/troubleshoot-performance-issues-using-jfr.htm#JSTGD299
+
+https://www.oracle.com/technetwork/java/javase/jmc6-release-notes-3689600.html
 
 #### Warnings
 
