@@ -28,6 +28,8 @@ https://www.oracle.com/technetwork/java/javase/jmc6-release-notes-3689600.html
 
 #### Warnings
 
+- It’s recommended to add `-XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints` flags to improve the accuracy of JFR Method Profiler
+
 - Beware some Docker versions of OpneJDK does not contains JFR profiles, you will end up with this:
 
 ```
