@@ -30,7 +30,9 @@ https://www.oracle.com/technetwork/java/javase/jmc6-release-notes-3689600.html
 
 - It’s recommended to add `-XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints` flags to improve the accuracy of JFR Method Profiler
 
-- Beware some Docker versions of OpneJDK does not contains JFR profiles, you will end up with this:
+- `-XX:+PreserveFramePointer`
+
+- Beware some Docker versions of OpenJDK does not contains JFR profiles, you will end up with this:
 
 ```
 root@b03df92bfa39:/docker-java-home/lib# jcmd 8 JFR.start delay=20s duration=60s name=Test filename=recording.jfr
