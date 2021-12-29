@@ -1,3 +1,18 @@
+# How to build Java Flight Recorder inside Docker
+
+
+```bash
+mvn clean package
+```
+
+```bash
+cp src/main/docker/Dockerfile .
+```
+
+```bash
+docker build docker-jfr .
+```
+
 # How to run Java Flight Recorder inside Docker
 
 ```bash

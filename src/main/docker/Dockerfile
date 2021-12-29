@@ -1,7 +1,7 @@
 FROM openjdk:11
 
-COPY maven/target/dependency /app/modules
-COPY maven/target/*.jar /app/modules
+COPY./target/dependency /app/modules
+COPY ./target/*.jar /app/modules
 
 
 CMD java \
